@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Coffee Machine</title>
+
+    <style>
+
+        html, body {
+          margin:0px;
+        }
+
+        .solidBlack{
+          background:black;
+        }
+
+        .solidWhite{
+          background:white;
+        }
+
+        .whiteOutline {
+          background:black;
+          border:1px solid white;
+        }
+
+        #base1 {
+          position:absolute;
+          height:470px;
+          width:400px;
+          margin-top:100px;
+          margin-left:250px;
+          z-index:-2;
+        }
+
+        #base2 {
+          position:absolute;
+          height:470px;
+          width:50px;
+          margin-top:98px;
+          margin-left:200px;
+          background:black;
+          border-radius:40% 0% 0% 0%;
+          border:2px solid white;
+          z-index:-3;
+        }
+
+        #base3 {
+          position:absolute;
+          height:470px;
+          width:50px;
+          margin-top:98px;
+          margin-left:640px;
+          background:black;
+          border-radius:0% 40% 0% 0%;
+          border:2px solid white;
+          z-index:-3;
+        }
+
+        #waterTop {
+          position:absolute;
+          height:10px;
+          width:130px;
+          margin-top:200px;
+          margin-left:80px;
+          border-radius:40% 0% 0% 40%;
+          z-index:-4;
+        }
+
+        #waterBottom {
+          position:absolute;
+          height:30px;
+          width:120px;
+          margin-top:530px;
+          margin-left:80px;
+          border-radius:45% 0% 0% 45%;
+          z-index:-4;
+        }
+
+        #waterBottom2 {
+          position:absolute;
+          background:transparent;
+          height:20px;
+          width:120px;
+          margin-top:545px;
+          margin-left:80px;
+          border-radius:0% 0% 0% 45%;
+          border:1px solid black;
+          z-index:-4;
+        }
+
+        #waterContainer {
+          position:absolute;
+          height:340px;
+          width:130px;
+          margin-top:205px;
+          margin-left:80px;
+          background:transparent;
+          border: 1px solid black;
+          z-index:-4;
+        }
+
+        #grateTop {
+          position:absolute;
+          height:40px;
+          width:150px;
+          margin-top:450px;
+          margin-left:690px;
+          border-radius:0% 70% 50% 0%;
+          z-index:-4;
+        }
+
+        #grateSlope {
+          position:absolute;
+          width:0;
+          height:0;
+          margin-top:505px;
+          margin-left:721px;
+          border-top: 60px solid black;
+          border-right: 110px solid transparent;
+          z-index:-5;
+        }
+
+        #grateBottom1 {
+          position:absolute;
+          height:48px;
+          width:150px;
+          margin-top:470px;
+          margin-left:690px;
+          border-radius:0% 0% 50% 0%;
+          z-index:-5;
+        }
+
+        #grateBottom2 {
+          position:absolute;
+          height:80px;
+          width:65px;
+          margin-top:490px;
+          margin-left:693px;
+          border-radius:0% 0% 90% 0%;
+          z-index:-5;
+        }
+
+        #pour {
+          position:absolute;
+          height:150px;
+          width:100px;
+          margin-top:150px;
+          margin-left:680px;
+          background:black;
+          border-radius:0% 40% 0% 0%;
+          z-index:-5;
+        }
+
+        #pourCounter {
+          position:absolute;
+  	      width:0;
+  	      height:0;
+          margin-top:200px;
+          margin-left:760px;
+  	      border-bottom:100px solid white;
+  	      border-left:20px solid transparent;
+          z-index:-4;
+        }
+
+        #handle1 {
+          position:absolute;
+          height:30px;
+          width:300px;
+          margin-top:200px;
+          margin-left:550px;
+          background:black;
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+          z-index:0;
+        }
+
+        #handle2 {
+          position:absolute;
+          height:10px;
+          width:310px;
+          margin-top:201px;
+          margin-left:545px;
+          border-radius: 0px 90px 90px 0px;
+          z-index:0;
+        }
+
+        #handle3 {
+          position:absolute;
+          height:10px;
+          width:310px;
+          margin-top:221px;
+          margin-left:545px;
+          border-radius: 0px 90px 90px 0px;
+          z-index:0;
+        }
+
+        #handle4 {
+          position:absolute;
+          height:8px;
+          width:285px;
+          margin-top:211px;
+          margin-left:570px;
+          background:transparent;
+          border-radius:90px;
+          border:1px solid white;
+          z-index:0;
+        }
+
+        #handleCircle1 {
+          position:absolute;
+          height:60px;
+          width:60px;
+          margin-top:185px;
+          margin-left:493px;
+          background:black;
+          border-radius:90px;
+          border:1px solid white;
+          z-index:-1;
+        }
+
+        #handleCircle2 {
+          position:absolute;
+          height:20px;
+          width:20px;
+          margin-top:200px;
+          margin-left:508px;
+          background:black;
+          border-radius:90px;
+          border:5px solid white;
+          z-index:-1;
+        }
+
+        #accent1 {
+          position:absolute;
+          height:15px;
+          width:180px;
+          margin-top:300px;
+          margin-left:250px;
+          border-radius:90px 90px 0px 0px;
+          z-index:0;
+        }
+
+        #accent2 {
+          position:absolute;
+          height:15px;
+          width:180px;
+          margin-top:300px;
+          margin-left:460px;
+          border-radius:90px 90px 0px 0px;
+          z-index:0;
+        }
+
+        #grateDetail1 {
+          position:absolute;
+          height:3px;
+          width:130px;
+          margin-top:470px;
+          margin-left:700px;
+          border-radius:90px 90px 90px 90px;
+          z-index:0;
+        }
+
+        #grateDetail2 {
+          position:absolute;
+          height:2px;
+          width:125px;
+          margin-top:476px;
+          margin-left:702px;
+          border-radius:90px 90px 90px 90px;
+          z-index:0;
+        }
+
+        #grateDetail3 {
+          position:absolute;
+          height:1px;
+          width:118px;
+          margin-top:482px;
+          margin-left:705px;
+          border-radius:90px 90px 90px 90px;
+          z-index:0;
+        }
+
+        #grateDetail4 {
+          position:absolute;
+          height:2px;
+          width:124px;
+          margin-top:465px;
+          margin-left:696px;
+          border-radius:90px 90px 90px 90px;
+          z-index:0;
+        }
+
+        #grateDetail5 {
+          position:absolute;
+          height:1px;
+          width:115px;
+          margin-top:461px;
+          margin-left:695px;
+          border-radius:90px 90px 90px 90px;
+          z-index:0;
+        }
+
+
+      </style>
+  </head>
+
+  <body>
+
+    <div id="base1" class="solidBlack"></div>
+    <div id="base2"></div>
+    <div id="base3"></div>
+    <div id="waterTop" class="solidBlack"></div>
+    <div id="waterBottom" class="solidBlack"></div>
+    <div id="waterBottom2"></div>
+    <div id="waterContainer"></div>
+    <div id="grateTop" class="whiteOutline"></div>
+    <div id="grateSlope"></div>
+    <div id="grateBottom1" class="solidBlack"></div>
+    <div id="grateBottom2" class="solidBlack"></div>
+    <div id="pour"></div>
+    <div id="pourCounter"></div>
+    <div id="handle1"></div>
+    <div id="handle2" class="solidBlack"></div>
+    <div id="handle3" class="solidBlack"></div>
+    <div id="handle4"></div>
+    <div id="handleCircle1" class="whiteOutline"></div>
+    <div id="handleCircle2"></div>
+    <div id="accent1" class="whiteOutline"></div>
+    <div id="accent2" class="whiteOutline"></div>
+    <div id="grateDetail1" class="solidWhite"></div>
+    <div id="grateDetail2" class="solidWhite"></div>
+    <div id="grateDetail3" class="solidWhite"></div>
+    <div id="grateDetail4" class="solidWhite"></div>
+    <div id="grateDetail5" class="solidWhite"></div>
+
+  <!-- Does fuzzy logic tickle? -->
+
+  </body>
+
+</html>

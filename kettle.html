@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Kettle</title>
+
+    <style>
+
+        html, body {
+          margin:30px;
+        }
+
+        .solidBlack{
+          background:black;
+        }
+
+        .solidWhite{
+          background:white;
+        }
+
+        .blackOutline{
+          background:white;
+          border:1px solid black;
+        }
+
+        .whiteOutline {
+          background:black;
+          border:1px solid white;
+        }
+
+        #base1 {
+          position:absolute;
+          height:120px;
+          width:350px;
+          margin-top:500px;
+          margin-left:250px;
+          border-radius:60% 60% 60% 60%;
+          z-index:-2;
+        }
+
+        #base1Sides {
+          position:absolute;
+          height:7px;
+          width:350px;
+          margin-top:555px;
+          margin-left:250px;
+          z-index:-2;
+        }
+
+
+        #base2 {
+          position:absolute;
+          height:120px;
+          width:350px;
+          margin-top:490px;
+          margin-left:250px;
+          border-radius:60% 60% 60% 60%;
+          z-index:-1;
+        }
+
+        #base2Sides {
+          position:absolute;
+          height:38px;
+          width:348px;
+          margin-top:523px;
+          margin-left:250px;
+          border-left:1px solid black;
+          border-right:1px solid black;
+        }
+
+        #base3 {
+          position:absolute;
+          height:120px;
+          width:350px;
+          margin-top:460px;
+          margin-left:250px;
+          border-radius:60% 60% 60% 60%;
+        }
+
+        #base3Sides {
+          position:absolute;
+          height:21px;
+          width:350px;
+          margin-top:499px;
+          margin-left:250px;
+          z-index:0;
+        }
+
+        #mainBase1 {
+          position:absolute;
+          height:120px;
+          width:348px;
+          margin-top:439px;
+          margin-left:250px;
+          border-radius:60% 60% 60% 60%;
+        }
+
+        #mainBase2 {
+          position:absolute;
+          width:154px;
+          margin-top:147px;
+          margin-left:328px;
+  	      border-bottom:250px solid black;
+  	      border-left:20px solid white;
+  	      border-right:20px solid white;
+          transform:scale(1.8);
+        }
+
+        #mainBase2Counter1 {
+          position:absolute;
+          width:275px;
+          height:450px;
+          margin-top:48px;
+          margin-left:288px;
+        }
+
+        #mainBase2Counter2 {
+          position:absolute;
+          width:50px;
+          height:451px;
+          margin-top:49px;
+          margin-left:269px;
+          transform:rotate(4.5deg);
+        }
+
+        #mainBase2Counter3 {
+          position:absolute;
+          width:50px;
+          height:451px;
+          margin-top:49px;
+          margin-left:531px;
+          transform:rotate(-4.5deg);
+        }
+
+        #mainBase2Counter4 {
+          position:absolute;
+          width:276px;
+          height:5px;
+          margin-top:45px;
+          margin-left:287px;
+          border-radius:60% 60% 0% 0%;
+        }
+
+        #mainBase2Counter5 {
+          position:absolute;
+          width:276px;
+          height:5px;
+          margin-top:44px;
+          margin-left:286px;
+          border-radius:60% 60% 0% 0%;
+          border-top:1px solid black;
+        }
+
+        #outerCounter1 {
+          position:absolute;
+          width:50px;
+          height:451px;
+          margin-top:49px;
+          margin-left:217px;
+          transform:rotate(4.5deg);
+        }
+
+        #outerCounter2 {
+          position:absolute;
+          width:50px;
+          height:451px;
+          margin-top:49px;
+          margin-left:583px;
+          transform:rotate(-4.5deg);
+        }
+
+        #handleBase {
+          position:absolute;
+          width:20px;
+          height:451px;
+          margin-top:49px;
+          margin-left:250px;
+          border-radius:50% 0% 0% 50%;
+          transform:rotate(4.5deg);
+          z-index:1;
+        }
+
+        #handleBaseAccent {
+          position:absolute;
+          color:transparent;
+          height:20px;
+          width:230px;
+          margin-top:310px;
+          margin-left:136px;
+          border-radius:30% 30% 10% 10%;
+          border:1px solid black;
+          transform:rotate(-86deg);
+          z-index:1;
+        }
+
+        #handle1 {
+          position:absolute;
+          width:158px;
+          height:451px;
+          margin-top:44px;
+          margin-left:105px;
+          border-radius:100% 0% 0% 250%;
+          transform:rotate(4.5deg);
+        }
+
+        #handleCounter {
+          position:absolute;
+          width:113px;
+          height:366px;
+          margin-top:82px;
+          margin-left:158px;
+          border-radius:100% 0% 0% 250%;
+          transform:rotate(4.5deg);
+        }
+
+        #handleAccent {
+          position:absolute;
+          color:transparent;
+          width:150px;
+          height:415px;
+          margin-top:64px;
+          margin-left:129px;
+          border-radius:150% 0% 0% 280%;
+          border:1px solid white;
+          transform:rotate(4.5deg);
+        }
+
+        #pour {
+          position:absolute;
+          width:0;
+  	      height:0;
+          margin-top:85px;
+          margin-left:536px;
+  	      border-top: 60px solid black;
+  	      border-left: 120px solid transparent;
+          transform:rotate(-94deg);
+        }
+
+        #pourCounter1 {
+          position:absolute;
+          width:0;
+  	      height:0;
+          margin-top:84px;
+          margin-left:535px;
+  	      border-top: 60px solid white;
+  	      border-left: 120px solid transparent;
+          transform:rotate(-94deg) scale(0.96);
+        }
+
+        #pourCounter2 {
+          position:absolute;
+          width:56px;
+          height:21px;
+          margin-top:39px;
+          margin-left:563px;
+          border-radius:500% 0% 0% 0%;
+          border-bottom:1px solid black;
+          transform:rotate(4.5deg);
+        }
+
+        #pourCounter3 {
+          position:absolute;
+          width:10px;
+          height:10px;
+          margin-top:52px;
+          margin-left:612px;
+          transform:rotate(4.5deg);
+        }
+
+        #top1 {
+          position:absolute;
+          height:20px;
+          width:276px;
+          margin-top:33px;
+          margin-left:287px;
+          border-radius:60% 60% 60% 60%;
+          z-index:-1;
+        }
+
+        #top1Sides {
+          position:absolute;
+          height:7px;
+          width:276px;
+          margin-top:42px;
+          margin-left:287px;
+          z-index:-1;
+        }
+
+        #top2 {
+          position:absolute;
+          height:20px;
+          width:230px;
+          margin-top:20px;
+          margin-left:309px;
+          border-radius:30% 30% 10% 10%;
+          z-index:-2;
+        }
+
+
+      </style>
+
+  </head>
+
+  <body>
+
+    <div id="base1" class="solidBlack"></div>
+    <div id="base1Sides" class="solidBlack"></div>
+    <div id="base2Sides"></div>
+    <div id="base2" class="solidWhite"></div>
+    <div id="base3" class="solidBlack"></div>
+    <div id="base3Sides" class="solidBlack"></div>
+    <div id="mainBase1" class="blackOutline"></div>
+    <div id="mainBase2"></div>
+    <div id="mainBase2Counter1" class="solidWhite"></div>
+    <div id="mainBase2Counter2" class="solidWhite"></div>
+    <div id="mainBase2Counter3" class="solidWhite"></div>
+    <div id="mainBase2Counter4" class="solidWhite"></div>
+    <div id="mainBase2Counter5"></div>
+    <div id="outerCounter1" class="solidWhite"></div>
+    <div id="outerCounter2" class="solidWhite"></div>
+    <div id="handleBase" class="whiteOutline"></div>
+    <div id="handleBaseAccent"></div>
+    <div id="handle1" class="solidBlack"></div>
+    <div id="handleCounter" class="solidWhite"></div>
+    <div id="handleAccent"></div>
+    <div id="pour"></div>
+    <div id="pourCounter1"></div>
+    <div id="pourCounter2" class="solidWhite"></div>
+    <div id="pourCounter3" class="solidWhite"></div>
+    <div id="top1" class="solidBlack"></div>
+    <div id="top1Sides" class="solidBlack"></div>
+    <div id="top2" class="blackOutline"></div>
+
+    <!-- What should you do if you see an endangered animal eating an endangered plant? -->
+
+  </body>
+  
+</html>
