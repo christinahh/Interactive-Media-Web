@@ -1,0 +1,235 @@
+body {
+  font:12px Heebo, sans-serif;
+  color:#404040;
+  background-color:#F8F8F8;
+  margin:-10px;
+}
+
+a {
+  color:#991020;
+  font-family:Heebo, sans-serif;
+}
+
+
+a:hover{
+  background-color:#991020;
+  color:#F8F8F8;
+}
+
+strong{
+  color:#991020;
+}
+
+h1 {
+  color:#D3D3D3;
+  font-size:20em;
+  font-family: 'Open Sans Condensed'sans-serif;
+  font-weight:300;
+  line-height:100pt;
+  letter-spacing:7pt;
+  text-align:left;
+  text-justify: inter-word;
+}
+
+h2 {
+  font-size:6em;
+  font-family:Heebo, sans-serif;
+  font-weight:500;
+  line-height:80pt;
+  letter-spacing:1pt;
+  text-align:left;
+  text-justify: inter-word;
+}
+
+h3 {
+  font-size:1.5em;
+  font-family:Heebo, sans-serif;
+  font-weight:500;
+  line-height:20pt;
+}
+
+.attention {
+  font-size:1.4em;
+  font-family:Heebo, sans-serif;
+  font-weight:500;
+  line-height:16pt;
+}
+
+.regularCopy {
+  color:#505050;
+  font-size:1.3em;
+  font-family:Heebo, sans-serif;
+  font-weight:400;
+}
+
+.whatComes{
+  position:absolute;
+  display:inline;
+  width:530px;
+  color:#991020;
+  margin-top:50px;
+  margin-left:100px;
+  line-height:500px;
+}
+
+.after{
+  position:absolute;
+  margin-top:120px;
+  margin-left:173.5px;
+  -webkit-text-stroke: 5px #F8F8F8;
+  color: white;
+  text-shadow:
+      1px 1px 0 #F8F8F8,
+      5px 5px 0 #F8F8F8,
+      5px  5px 0 #F8F8F8,
+      5px 5px 0 #F8F8F8,
+      5px 5px 0 #F8F8F8;
+}
+
+.theEnvironment{
+  position:absolute;
+  display:inline;
+  width:730px;
+  color:991020;
+  margin-top:410px;
+  margin-left:580px;
+  line-height:500px;
+}
+
+.subHead{
+  position:absolute;
+  display:inline;
+  width:530px;
+  margin-top:600px;
+  margin-left:310px;
+  color:#202020;
+}
+
+.subHead2{
+  position:absolute;
+  display:inline;
+  width:530px;
+  margin-top:620px;
+  margin-left:580px;
+  color:#202020;
+}
+
+.titleLine1{
+  position:absolute;
+  background-color:#DCDCDC;
+  width:5px;
+  height:197px;
+  margin-top:-10px;
+  margin-left:547.5px;
+  z-index:1;
+}
+
+.titleLine2{
+  position:absolute;
+  background-color:#DCDCDC;
+  width:5px;
+  height:1020px;
+  margin-top:485px;
+  margin-left:547.5px;
+  z-index:1;
+}
+
+.lecture{
+  position:absolute;
+  display:inline;
+  width:530px;
+  margin-top:770px;
+  margin-left:-10px;
+  color:#202020;
+  text-align:right
+}
+
+.dateTime{
+  position:absolute;
+  display:inline;
+  width:530px;
+  margin-top:900px;
+  margin-left:580px;
+  color:#505050;
+  font-size:1.3em;
+  font-family:Heebo, sans-serif;
+  font-weight:400;
+  line-height:15pt;
+}
+
+.lecture2{
+  position:absolute;
+  margin-top:1000px;
+  margin-left:350px;
+  color:#202020;
+  text-align:right;
+}
+
+.tickets{
+  position:absolute;
+  display:inline;
+  width:530px;
+  margin-top:1050px;
+  margin-left:580px;
+  text-align:left;
+  color:#991020;
+}
+
+.info{
+  position:absolute;
+  display:inline;
+  width:530px;
+  margin-top:1110px;
+  margin-left:580px;
+  line-height:20pt;
+  text-align:left;
+}
+
+.faculty{
+  position:absolute;
+  margin-top:1390px;
+  margin-left:580px;
+  font-family:Heebo, sans-serif;
+  font-weight:500;
+  font-size:1.1em;
+  color:#707070;
+
+}
+
+.facultyInfo{
+  position:absolute;
+  display:inline;
+  margin-top:1420px;
+  margin-left:580px;
+  width:550px;
+  line-height:14pt;
+  color:#909090;
+}
+
+.bigRed{
+  position:relative;
+  float:right;
+  background-color:#991020;
+  margin-top:-10px;
+  margin-left:-10px;
+  width:132px;
+  height:1516px;
+  z-index:1;
+}
+
+.buildings{
+  position:absolute;
+  margin-top:39px;
+  margin-left:360px;
+  transform:scale(0.7);
+  z-index:-1;
+}
+
+.hills{
+  position:absolute;
+  margin-top:1195px;
+  margin-bottom:-5px;
+  margin-left:-410px;
+  transform:scale(0.5);
+  z-index:-2;
+}
