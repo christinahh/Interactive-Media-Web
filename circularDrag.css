@@ -1,0 +1,422 @@
+body{
+  background:black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top:17%;
+}
+
+.ui-widget-content {
+  width: 200px;
+  height: 200px;
+  border-radius:100%;
+  cursor: url('https://i.postimg.cc/J4rNNZVS/tinycursor.png'),move;
+}
+
+#draggable{
+  background-color:#20B2AA;
+}
+
+#draggable2 {
+  background-color:#3FBDB6;
+}
+
+#draggable3 {
+  background-color:#5EC8C2;
+}
+
+#draggable4 {
+  background-color:#7DD3CE;
+}
+
+#draggable5 {
+  background-color:#9CDEDA;
+}
+
+#draggable6 {
+  background-color:#BBE9E6;
+}
+
+#draggable7 {
+  background-color:#CEE8ED;
+}
+
+#draggable8 {
+  background-color:#B8DEE6;
+}
+
+#draggable9 {
+  background-color:#A2D4DF;
+}
+
+#draggable10 {
+  background-color:#8CCAD8;
+}
+
+#draggable11{
+  background-color:#76C0D1;
+}
+
+#draggable12 {
+  background-color:#60B6CA;
+}
+
+#draggable13 {
+  background-color:#93BDE7;
+}
+
+#draggable14 {
+  background-color:#A2C6EA;
+}
+
+#draggable15 {
+  background-color:#B1CFED;
+}
+
+#draggable16 {
+  background-color:#C0D8F0;
+}
+
+#draggable17 {
+  background-color:#CFE1F3;
+}
+
+#draggable18 {
+  background-color:#DEEAF6;
+}
+
+#draggable19 {
+  background-color:#D9DCEB;
+}
+
+#draggable20 {
+  background-color:#C7CDE3;
+}
+
+#draggable21 {
+  background-color:#B5BEDB;
+}
+
+#draggable22 {
+  background-color:#A3AFD3;
+}
+
+#draggable23 {
+  background-color:#91A0CB;
+}
+
+#draggable24 {
+  background-color:#7F91C3;
+}
+
+#draggable25 {
+  background-color:#6F6DA7;
+}
+
+#draggable26 {
+  background-color:#8381B3;
+}
+
+#draggable27 {
+  background-color:#9795BF;
+}
+
+#draggable28 {
+  background-color:#ABA9CB;
+}
+
+#draggable29 {
+  background-color:#BFBDD7;
+}
+
+#draggable30 {
+  background-color:#D3D1E3;
+}
+
+#draggable31 {
+  background-color:#CFCDDD;
+}
+
+#draggable32 {
+  background-color:#B7B5CF;
+}
+
+#draggable33 {
+  background-color:#9F9DC1;
+}
+
+#draggable34 {
+  background-color:#8785B3;
+}
+
+#draggable35 {
+  background-color:#6F6DA5;
+}
+
+#draggable36 {
+  background-color:#575597;
+}
+
+#draggable37 {
+  background-color:#434187;
+}
+
+#draggable38 {
+  background-color:#5D5C98;
+}
+
+#draggable39 {
+  background-color:#7777A9;
+}
+
+#draggable40{
+  background-color:#9192BA;
+}
+
+#draggable41 {
+  background-color:#ABADCB;
+}
+
+#draggable42 {
+  background-color:#C5C8DC;
+}
+
+#draggable43 {
+  background-color:#BFBDD1;
+}
+
+#draggable44 {
+  background-color:#C7C0D1;
+}
+
+#draggable45 {
+  background-color:#ABA1BD;
+}
+
+#draggable46 {
+  background-color:#8F82A9;
+}
+
+#draggable47 {
+  background-color:#736395;
+}
+
+#draggable48 {
+  background-color:#574481;
+}
+
+#draggable49 {
+  background-color:#694B86;
+}
+
+#draggable50 {
+  background-color:#926AA8;
+}
+
+#draggable51 {
+  background-color:#B284C2;
+}
+
+#draggable52 {
+  background-color:#B276B7;
+}
+
+#draggable53 {
+  background-color:#B269AD;
+}
+
+#draggable54 {
+  background-color:#B2519C;
+}
+
+#draggable55 {
+  background-color:#B25184;
+}
+
+#draggable56 {
+  background-color:#AF5572;
+}
+
+#draggable57 {
+  background-color:#BC7189;
+}
+
+#draggable58 {
+  background-color:#C98DA0;
+}
+
+#draggable59 {
+  background-color:#D6A9B7;
+}
+
+#draggable60 {
+  background-color:#DEA1A7;
+}
+
+#draggable61 {
+  background-color:#D3838B;
+}
+
+#draggable62 {
+  background-color:#C8656F;
+}
+
+#draggable63 {
+  background-color:#BD4753;
+}
+
+#draggable64 {
+  background-color:#C93C38;
+}
+
+#draggable65 {
+  background-color:#D15C59;
+}
+
+#draggable66 {
+  background-color:#D97C7A;
+}
+
+#draggable67 {
+  background-color:#E19C9B;
+}
+
+#draggable68 {
+  background-color:#EEB493;
+}
+
+#draggable69{
+  background-color:#EA9B6F;
+}
+
+#draggable70 {
+  background-color:#E6824B;
+}
+
+#draggable71 {
+  background-color:#E26927;
+}
+
+#draggable72 {
+  background-color:#E68D3D;
+}
+
+#draggable73 {
+  background-color:#EAA05D;
+}
+
+#draggable74 {
+  background-color:#EEB37D;
+}
+
+#draggable75 {
+  background-color:#F2C69D;
+}
+
+#draggable76 {
+  background-color:#F2DA99;
+}
+
+#draggable77 {
+  background-color:#EFCE79;
+}
+
+#draggable78 {
+  background-color:#ECC259;
+}
+
+#draggable79 {
+  background-color:#E9B639;
+}
+
+#draggable80 {
+  background-color:#F1D532;
+}
+
+#draggable81 {
+  background-color:#F3DC54;
+}
+
+#draggable82 {
+  background-color:#F5E376;
+}
+
+#draggable83 {
+  background-color:#F7EA98;
+}
+
+#draggable84 {
+  background-color:#F0F29A;
+}
+
+#draggable85 {
+  background-color:#D8EAA2;
+}
+
+#draggable86 {
+  background-color:#CDE584;
+}
+
+#draggable87 {
+  background-color:#C2E066;
+}
+
+#draggable88 {
+  background-color:#B7DB48;
+}
+
+#draggable89 {
+  background-color:#92CF53;
+}
+
+#draggable90 {
+  background-color:#A4D66F;
+}
+
+#draggable91 {
+  background-color:#B6DD8B;
+}
+
+#draggable92 {
+  background-color:#C8E4A7;
+}
+
+#draggable93 {
+  background-color:#B0D8A3;
+}
+
+#draggable94 {
+  background-color:#97CC85;
+}
+
+#draggable95 {
+  background-color:#7EC067;
+}
+
+#draggable96 {
+  background-color:#60AB60;
+}
+
+#draggable97 {
+  background-color:#419B41;
+}
+
+#draggable98{
+  background-color:#41AC82;
+}
+
+#draggable99 {
+  background-color:#229F6E;
+}
+
+#draggable100 {
+  background-color:#20B2AA;
+}
+
+@media (max-width:600px){
+
+  .ui-widget-content{
+    width:100px;
+    height:100px;
+  }
+}
