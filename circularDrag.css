@@ -10,7 +10,7 @@ body{
   width: 200px;
   height: 200px;
   border-radius:100%;
-  border:none!important;
+  border:none;
   cursor: url('https://i.postimg.cc/J4rNNZVS/tinycursor.png'),move;
 }
 
