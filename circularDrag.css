@@ -2,6 +2,7 @@ body{
   background:black;
   justify-content: center;
   align-items: center;
+  display:flex;
   padding-top:17%;
 }
 
@@ -9,6 +10,7 @@ body{
   width: 200px;
   height: 200px;
   border-radius:100%;
+  border:none;
   cursor: url('https://i.postimg.cc/J4rNNZVS/tinycursor.png'),move;
 }
 
