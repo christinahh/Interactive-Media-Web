@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin:0px;
+}
+
+h1{
+  font-family: brother-1816, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 130px;
+  text-transform: uppercase;
+  text-align:center;
+  margin-top:10%;
+  color:#EB3E4A;
+}
+
+h2{
+  font-family: brother-1816, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align:center;
+  margin-top:0%;
+  color:#EB3E4A;
+}
+
+.topButton{
+  display:inline-block;
+  font-family: brother-1816, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:15px;
+  margin-top:2%;
+  background-color:#323741;
+  color:#fff;
+  border-radius:10px;
+  padding:10px 15px 10px 15px;
+  cursor:pointer;
+}
+
+#myersBriggs{
+  margin-left:545px;
+}
+
+#hexaco{
+  left:10%;
+}
+
+#enneagram{
+  left:10%;
+}
+
+/* Myers Briggs */
+
+.sectionHeader{
+  position:absolute;
+  font-family: brother-1816, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size:70px;
+  text-transform:uppercase;
+  color:#EB3E4A;
+}
+
+#briggs{
+  margin-top:300px;
+  margin-left:150px;
+}
+
+.sectionInfo{
+  font-family: brother-1816, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:15px;
+  color:#fff;
+  text-align:left;
+  width:550px;
+  margin-right:127px;
+}
+
+#briggsInfo{
+  float:right;
+  margin-top:323px;
+}
+
+.legend{
+  position:absolute;
+  font-family: brother-1816, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size:15px;
+  color:#909090;
+  text-align:right;
+  width:550px;
+  margin-left:100px;
+  height:auto;
+}
+
+#briggsLegend{
+  margin-top:505px;
+}
+
+
+/* HEXACO */
+
+#hex{
+  margin-top:1060px;
+  margin-left:150px;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background:#323741 ;
+  margin-top:600px;
+  border: 1px solid white;
+  border-radius: 7px 7px 7px 7px;
+  color: #fff;
+  font-family: brother-1816, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  cursor: pointer;
+  z-index:1;
+}
+
+.button:hover {
+  background-color: #4E5863;
+  color: #fff;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #4E5863;
+}
+
+.button.is-checked {
+  color: white;
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: table-row;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 7px 7px 7px 7px;
+  margin-left: 750px;
+  margin-right: -740px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0.5em 0.5em 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0.5em 0.5em; }
+
+
+/* ---- table-like ---- */
+
+.table-like {
+  position:absolute
+  width: 1200px;
+  list-style:none;
+  font-family: brother-1816, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:14px;
+  line-height: 16px;
+}
+
+.table-like2 {
+  position:absolute
+  width: 1200px;
+  list-style:none;
+  font-family: brother-1816, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:14px;
+  line-height: 16px;
+}
+
+/* clear fix */
+.table-like:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- vertical table-like ---- */
+
+.table-like__item {
+  width: 100%;
+  clear: both;
+}
+
+
+.table-like__item > * {
+  display: inline-block;
+  padding: 4px 4px;
+}
+
+.table-like__item .name { width: 600px; }
+.table-like__item .number { width: 0%; opacity: 0; }
+
+#myers1{
+  margin-left: 700px;
+  margin-top:770px;
+  text-align:left;
+}
+
+#myers2{
+  margin-right:770px;
+  margin-top:-2559px;
+  text-align:right;
+}
+
+.sectionBanner{
+  position:absolute;
+  background-color:#323741;
+  width:100%;
+  height:400px;
+  z-index:-1
+}
+
+#sectionBanner1{
+  position:absolute;
+  margin-top:280px;
+}
+
+#sectionBanner2{
+  margin-top:1060px;
+}
