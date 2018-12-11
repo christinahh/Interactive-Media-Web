@@ -92,14 +92,6 @@ h2{
     color: #000;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  top: 15px;
-}
-
 /* overall styles */
 
 #sectionBanner1, #sectionBanner2, #sectionBanner3{
