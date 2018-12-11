@@ -24,11 +24,54 @@ h1{
   width:100%;
 }
 
-#swash{
+/* #swash{
   margin-top:-110px;
   text-align:center;
   transform:scale(0.7);
   z-index:-1;
+} */
+#topBoxes{
+  margin-top:-90px;
+  text-align:center;
+}
+
+#topBox1{
+  margin-left:40%;
+  width:10px;
+  height:10px;
+  background-color:#EB3E4A;
+}
+
+#topBox2{
+  margin-top:-12px;
+  margin-left:45%;
+  width:15px;
+  height:15px;
+  background-color:#EB3E4A;
+}
+
+#topBox3{
+  margin-top:-17px;
+  margin-left:50%;
+  width:20px;
+  height:20px;
+  background-color:#EB3E4A;
+}
+
+#topBox4{
+  margin-top:-19px;
+  margin-left:55%;
+  width:15px;
+  height:15px;
+  background-color:#EB3E4A;
+}
+
+#topBox5{
+  margin-top:-13px;
+  margin-left:60%;
+  width:10px;
+  height:10px;
+  background-color:#EB3E4A;
 }
 
 h2{
@@ -58,7 +101,7 @@ h2{
 }
 
 #myersBriggs{
-  margin-left:36.5%;
+  margin-left:36.75%;
   margin-right: 20px;
 }
 
