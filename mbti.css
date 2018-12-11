@@ -7,6 +7,11 @@ body {
   margin:0px;
 }
 
+#landing{
+  width:100%;
+  height:650px;
+}
+
 h1{
   font-family: brother-1816, sans-serif;
   font-weight: 400;
@@ -16,6 +21,7 @@ h1{
   text-align:center;
   margin-top:10%;
   color:#EB3E4A;
+  width:100%;
 }
 
 h2{
@@ -25,7 +31,8 @@ h2{
   font-size: 15px;
   text-transform: uppercase;
   text-align:center;
-  margin-top:0%;
+  margin-top:8%;
+  width:100%;
   color:#EB3E4A;
 }
 
@@ -35,57 +42,86 @@ h2{
   font-weight: 400;
   font-style: normal;
   font-size:15px;
-  margin-top:2%;
+  margin-top: 2%;
   background-color:#323741;
   color:#fff;
   border-radius:10px;
-  padding:10px 15px 10px 15px;
+  padding:10px 17px 10px 17px;
   cursor:pointer;
 }
 
 #myersBriggs{
-  margin-left:545px;
+  margin-left:36%;
+  margin-right: 20px;
 }
 
 #hexaco{
-  left:10%;
+  margin-right: 20px;
 }
 
 #enneagram{
-  left:10%;
+    margin-left: 20px;
 }
 
-/* Myers Briggs */
+#scrollToTop {
+    position: fixed;
+    display: none;
+    width: 40px;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 40px;
+    overflow: hidden;
+      /* -moz-transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+    transform: rotate(270deg); */
+    z-index: 999;
+    cursor: pointer;
+}
+#scrollToTop:hover {
+    background-color: #dadada;
+    color: #000;
+}
+
+/* overall styles */
+
+#sectionBanner1, #sectionBanner2, #sectionBanner3{
+  display:grid;
+  grid-template-columns: 70px 1fr 1fr 1fr 1fr 1fr 1fr 70px 1fr 1fr 1fr 1fr 1fr 1fr 70px ;
+  grid-template-rows: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+  /* messes up when I try using repeat() shorthand  */
+  background-color:#323741;
+  width:100%;
+  height:400px;
+  z-index:-1;
+}
 
 .sectionHeader{
-  position:absolute;
   font-family: brother-1816, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size:70px;
   text-transform:uppercase;
+  text-align:right;
+  width:600px;
   color:#EB3E4A;
-}
-
-#briggs{
-  margin-top:300px;
-  margin-left:150px;
+  padding:0px;
 }
 
 .sectionInfo{
   font-family: brother-1816, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size:15px;
-  color:#fff;
+  font-size:16px;
+  color: #F5F5F5;
   text-align:left;
   width:550px;
-  margin-right:127px;
-}
-
-#briggsInfo{
-  float:right;
-  margin-top:323px;
 }
 
 .legend{
@@ -95,31 +131,228 @@ h2{
   font-style: normal;
   font-size:15px;
   color:#909090;
-  text-align:right;
-  width:550px;
-  margin-left:100px;
-  height:auto;
+  text-align:left;
 }
 
-#briggsLegend{
-  margin-top:505px;
+.legendBox{
+  position:absolute;
+  width:15px;
+  height:15px;
+  border:1px solid #909090;
 }
 
+#official1, #official2, #official3 {
+  font-family: brother-1816, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align:center;
+  color:#323741;
+  padding-top:20px;
+  width:100%;
+}
+
+
+
+/* Myers Briggs */
+
+
+#briggs{
+  grid-column: 2/span 6;
+  grid-row: 2/4;
+  order:-1;
+}
+
+#briggsInfo{
+  grid-column: 9/16;
+  grid-row: 3/5;
+  order:1;
+}
+
+#mbIntroversion{
+  margin-left: 250px;
+  margin-top:145px;
+}
+
+#mbIntroversionBox{
+  background-color:#8BAF3E;
+  margin-left: 440px;
+  margin-top:150px;
+}
+
+#mbSensing{
+  margin-left: 505px;
+  margin-top:145px;
+}
+
+#mbSensingBox{
+  background-color:#208A70;
+  margin-left: 640px;
+  margin-top:150px;
+}
+
+#mbThinking{
+  margin-left: 310px;
+  margin-top:195px;
+}
+
+#mbThinkingBox{
+  background-color:#F47421;
+  margin-left: 440px;
+  margin-top:199px;
+}
+
+#mbJudging{
+  margin-left: 495px;
+  margin-top:195px;
+}
+
+#mbJudgingBox{
+  background-color:#00ADBF;
+  margin-left: 640px;
+  margin-top:199px;
+}
 
 /* HEXACO */
 
 #hex{
-  margin-top:1060px;
-  margin-left:150px;
+  grid-column: 2/span 6;
+  grid-row: 2/4;
+  order:-1;
 }
 
-/* ---- button ---- */
+#hexInfo{
+  grid-column: 9/16;
+  grid-row: 3/5;
+  order:1;
+}
+
+#hOpenness{
+  margin-left: 197px;
+  margin-top:145px;
+}
+
+#hOpennessBox{
+  background-color:#F47421;
+  margin-left: 280px;
+  margin-top:150px;
+}
+
+#hConscience{
+  margin-left: 137px;
+  margin-top:195px;
+}
+
+#hConscienceBox{
+  background-color:#855BA6;
+  margin-left: 280px;
+  margin-top:199px;
+}
+
+#hExtraversion{
+  margin-left: 353px;
+  margin-top:145px;
+}
+
+#hExtraversionBox{
+  background-color:#8BAF3E;
+  margin-left: 453px;
+  margin-top:150px;
+}
+
+#hAgreeableness{
+  margin-left: 523px;
+  margin-top:145px;
+}
+
+#hAgreeablenessBox{
+  background-color:#00ADBF;
+  margin-left: 640px;
+  margin-top:150px;
+}
+
+#hNeuroticism{
+  margin-left: 353px;
+  margin-top:195px;
+}
+
+#hNeuroticismBox{
+  background-color:#208A70;
+  margin-left: 453px;
+  margin-top:199px;
+}
+
+#hHonesty{
+  margin-left: 565px;
+  margin-top:195px;
+}
+
+#hHonestyBox{
+  background-color:#BE1E2D;
+  margin-left: 640px;
+  margin-top:199px;
+}
+
+/* enneagram */
+
+#enneagramtext{
+  grid-column: 2/span 6;
+  grid-row: 2/4;
+  order:-1;
+  width:580px;
+}
+
+#gramInfo{
+  grid-column: 9/16;
+  grid-row: 3/5;
+  order:1;
+}
+
+#gramThinking{
+  margin-left: 413px;
+  margin-top:145px;
+}
+
+#gramThinkingBox{
+  background-color:#00ADBF;
+  margin-left: 490px;
+  margin-top:150px;
+}
+
+#gramFeeling{
+  margin-left: 575px;
+  margin-top:145px;
+}
+
+#gramFeelingBox{
+  background-color:#F47421;
+  margin-left: 640px;
+  margin-top:150px;
+}
+
+#gramInstinct{
+  margin-left: 571px;
+  margin-top:195px;
+}
+
+#gramInstinctBox{
+  background-color:#8BAF3E;
+  margin-left: 640px;
+  margin-top:199px;
+}
+
+/* myers briggs button */
+
+#myersButtons{
+  grid-column:2/span 12;
+  grid-row:14/16;
+}
 
 .button {
   display: inline-block;
   padding: 0.5em 1.0em;
   background:#323741 ;
-  margin-top:600px;
   border: 1px solid white;
   border-radius: 7px 7px 7px 7px;
   color: #fff;
@@ -149,9 +382,10 @@ h2{
   box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
 }
 
-/* ---- button-group ---- */
+/* myers button group */
 
 .button-group:after {
+  position:absolute;
   content: '';
   display: table-row;
   clear: both;
@@ -160,86 +394,196 @@ h2{
 .button-group .button {
   float: left;
   border-radius: 7px 7px 7px 7px;
-  margin-left: 750px;
-  margin-right: -740px;
+  margin-left: 110px;
+  margin-right: -90px;
 }
 
 .button-group .button:first-child { border-radius: 0.5em 0.5em 0.5em 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0.5em 0.5em; }
+.button-group .button:last-child { border-radius: 0.5em 0.5em 0.5em 0.5em; }
 
+/* HEX BUTTONS */
+
+#hexButtons{
+  grid-column:1/span 13;
+  grid-row:14/16;
+}
+
+.button-group2:after {
+  position:absolute;
+  content: '';
+  display: table-row;
+  clear: both;
+}
+
+.button-group2 .button {
+  float: left;
+  border-radius: 7px 7px 7px 7px;
+  margin-left: 115px;
+  margin-right: -90px;
+}
+
+.button-group2 .button:first-child { border-radius: 0.5em 0.5em 0.5em 0.5em; }
+.button-group2 .button:last-child { border-radius: 0.5em 0.5em 0.5em 0.5em; }
+
+/* ENNEAGRAM BUTTONS */
+
+#gramButtons{
+  grid-column:4/span 13;
+  grid-row:14/16;
+}
+
+.button-group3:after {
+  position:absolute;
+  content: '';
+  display: table-row;
+  clear: both;
+}
+
+.button-group3 .button {
+  float: left;
+  border-radius: 7px 7px 7px 7px;
+  margin-left: 115px;
+  margin-right: -90px;
+}
+
+.button-group3 .button:first-child { border-radius: 0.5em 0.5em 0.5em 0.5em; }
+.button-group3 .button:last-child { border-radius: 0.5em 0.5em 0.5em 0.5em; }
 
 /* ---- table-like ---- */
 
 .table-like {
-  position:absolute
-  width: 1200px;
   list-style:none;
   font-family: brother-1816, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size:14px;
-  line-height: 16px;
+  line-height: 24px;
+  margin:0;
+  padding:0;
 }
 
-.table-like2 {
-  position:absolute
-  width: 1200px;
-  list-style:none;
-  font-family: brother-1816, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size:14px;
-  line-height: 16px;
-}
+/* myers tables */
 
-/* clear fix */
-.table-like:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- vertical table-like ---- */
-
-.table-like__item {
-  width: 100%;
-  clear: both;
-}
-
-
-.table-like__item > * {
-  display: inline-block;
-  padding: 4px 4px;
-}
-
-.table-like__item .name { width: 600px; }
-.table-like__item .number { width: 0%; opacity: 0; }
-
-#myers1{
-  margin-left: 700px;
-  margin-top:770px;
-  text-align:left;
-}
-
-#myers2{
-  margin-right:770px;
-  margin-top:-2559px;
-  text-align:right;
-}
-
-.sectionBanner{
-  position:absolute;
-  background-color:#323741;
+#allMeyers {
+  display:grid;
+  grid-template-columns: 70px 1fr 1fr 70px 1fr 1fr 70px;
   width:100%;
-  height:400px;
-  z-index:-1
+  margin:2em 0px;
 }
 
-#sectionBanner1{
-  position:absolute;
-  margin-top:280px;
+.name {
+  display:block;
+  width:100%;
+  line-height:24px;
 }
 
-#sectionBanner2{
-  margin-top:1060px;
+#myers1 {
+  text-align:right;
+  width:580px;
+  padding-left:80px;
+}
+
+#myers2div{
+  grid-column:5/span 4;
+  width:620px;
+}
+
+/* hexaco tables */
+
+#allHexaco {
+  display:grid;
+  grid-template-columns: 70px 1fr 1fr 70px 1fr 1fr 70px;
+  width:100%;
+  margin:2em 0px;
+}
+
+#hexaco1 {
+  text-align:right;
+  width:580px;
+  padding-left:80px;
+}
+
+#hexaco2div{
+  grid-column:5/span 4;
+  width:620px;
+}
+
+/* enneagram tables */
+
+#allEnneagram {
+  display:grid;
+  grid-template-columns: 70px 1fr 1fr 70px 1fr 1fr 70px;
+  width:100%;
+  margin:2em 0px;
+}
+
+#enneagram1 {
+  text-align:right;
+  width:580px;
+  padding-left:80px;
+}
+
+#enneagram2div{
+  grid-column:5/span 4;
+  width:620px;
+}
+
+/* text color */
+
+/* myers briggs */
+
+.lightGreen{
+  color:#8BAF3E;
+}
+
+.darkGreen{
+  color:#208A70;
+}
+
+.orange{
+  color: #F47421;
+}
+
+.lightBlue{
+  color:#00ADBF;
+}
+
+/* hexaco */
+
+.orange2{
+  color:#F47421;
+}
+
+.purple{
+  color:#855BA6;
+}
+
+.lightGreen2{
+  color:#8BAF3E;
+}
+
+.lightBlue2{
+  color:#00ADBF;
+}
+
+.darkGreen2{
+  color:#208A70;
+}
+
+.red{
+  color:#BE1E2D;
+}
+
+/* enneagram */
+
+.orange3{
+  color:#F47421;
+}
+
+.lightBlue3{
+  color:#00ADBF;
+}
+
+.lightGreen3{
+  color:#8BAF3E;
 }
